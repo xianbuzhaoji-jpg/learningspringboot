@@ -1,0 +1,38 @@
+### 测试首页
+GET http://localhost:8080/
+
+### 测试问候页面
+GET http://localhost:8080/greeting
+
+### 测试带参数的问候页面
+GET http://localhost:8080/greeting?name=Spring Boot
+
+### 测试 Hello World
+GET http://localhost:8080/hello
+
+### 获取所有用户
+GET http://localhost:8080/api/users
+
+### 获取单个用户
+GET http://localhost:8080/api/users/1
+
+### 创建新用户
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+    "name": "王五",
+    "email": "wangwu@example.com"
+}
+
+### 更新用户
+PUT http://localhost:8080/api/users/1
+Content-Type: application/json
+
+{
+    "name": "张三更新",
+    "email": "zhangsan_updated@example.com"
+}
+
+### 删除用户
+DELETE http://localhost:8080/api/users/3
